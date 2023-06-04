@@ -1,0 +1,6 @@
+
+*.pyc
+__pycache__/cache.cpython-311.pyc
+weather_cache.json
+*.json
+__pycache__/cache.cpython-311.pyc
