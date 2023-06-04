@@ -2,9 +2,12 @@ import argparse
 import json
 import os
 from weather import get_weather
+from weather import extract_weather_data
+from compare_weather import compare_weather
+from compare_weather import get_weather_data
 
 CONFIG_FILE = "config.json"
-
+flag=0
 def get_user_info():
     if os.path.isfile(CONFIG_FILE):
         try:
@@ -23,22 +26,34 @@ def get_user_info():
     print(f"Hey {name}. Welcome back! Choose an option: \n")
     print("1. Use default location")
     print("2. Use new location")
-    choice = input("Enter your choice (1 or 2): ")
+    print("3. Compare Weather of two locations")
+    choice = input("Enter your choice (1 or 2 or 3): ")
 
     if choice == "2":
         location = input("Enter new location: ")
-    else:
+        get_weather(location)
+        
+    elif choice == "3":
+        flag=1
+        city1 = input("Enter the first city name: ")
+        city2 = input("Enter the second city name: ")
+
+        weather_data_city1 = get_weather_data(city1)
+        weather_data_city2 = get_weather_data(city2)
+        compare_weather(city1, weather_data_city1, city2, weather_data_city2)
+        
+    elif choice == "1":
         location = default_location
+        get_weather(location)
 
     with open(CONFIG_FILE, "w") as file:
         config_data = {"name": name, "location": location}
         json.dump(config_data, file)
 
-    return name, location
+    return
 
 def main():
-    name, location = get_user_info()
-    get_weather(location)
-
+    get_user_info()
+    
 if __name__ == "__main__":
     main()

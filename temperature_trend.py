@@ -22,3 +22,26 @@ def plot_temperature_trend(weather_data):
     plt.grid(True, linestyle='--', alpha=0.5)
     plt.tight_layout()
     plt.show()
+
+def plot_temperature_twoInOne(data1, city1, data2, city2):
+    dates1 = []
+    temperatures1 = []
+
+    for item in data1:
+        date = item['date']
+        temperature = item['temperature']
+        dates1.append(date)
+        temperatures1.append(float(temperature))
+
+    dates2 = []
+    temperatures2 = []
+
+    for item in data2:
+        date = item['date']
+        temperature = item['temperature']
+        dates2.append(date)
+        temperatures2.append(float(temperature))
+
+    plt.plot(dates1, temperatures1, label=city1, color='red')
+    plt.plot(dates2, temperatures2, label=city2, color='blue')
+    plt.show()
