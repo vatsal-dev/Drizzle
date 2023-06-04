@@ -5,18 +5,19 @@
 
 This command-line tool allows you to fetch the current weather forecast for a specific city using the OpenWeatherMap API. It also incorporates data visualization capabilities to present weather data in a visually appealing manner.
 
+
 ## Features
 
-- Fetches the current weather forecast for a given city.
-- Leverages the OpenWeatherMap API to retrieve weather data.
+- Fetches the current weather forecast for a specified city.
+- Utilizes the OpenWeatherMap API to retrieve accurate weather data.
 - Parses the API response to extract relevant weather information.
-- Provides error handling for API requests and responses- Any wrong spelling of the input city is handled and error is shown accordingly.
-- Includes data visualization using Matplotlib.
-- Displays weather patterns and trends through charts, graphs, or maps. User can download the graph and further share it manually.
-- Complete Interactive and Personalized tool- Inputs your name and calls you for further actions through commands. 
-- Provides options to use a default location or input a new location.
-- Displays the weather forecast for the next 6 days at different time intervals.
-- Supports using the previously input location as the default location for subsequent runs.
+- Implements robust error handling for API requests and responses. Handles misspelled city names and displays appropriate error messages.
+- Incorporates data visualization using Matplotlib.
+- Presents weather patterns and trends through visually appealing charts, graphs, or maps. Allows users to download and share the generated graphs.
+- Provides an interactive and personalized experience. Greets the user by name and prompts further actions through commands.
+- Offers the choice to either use a default location or input a new location.
+- Displays the weather forecast for the next 6 days at various time intervals.
+- Supports setting the previously entered location as the default for subsequent runs.
 
 ## Prerequisites
 

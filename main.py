@@ -1,40 +1,40 @@
-import argparse
 import json
 import os
-from weather import get_weather, extract_weather_data
+from weather import get_weather
 from compare_weather import compare_weather, get_weather_data
 
 CONFIG_FILE = "config.json"
-flag = 0
 
 def get_user_info():
-    global flag
     if os.path.isfile(CONFIG_FILE):
         try:
+
             with open(CONFIG_FILE, "r") as file:
                 config_data = json.load(file)
                 name = config_data.get("name")
                 default_location = config_data.get("location")
-        except json.JSONDecodeError:
+
+        except (json.JSONDecodeError, FileNotFoundError):
+
             print("Invalid or empty JSON file. Starting from scratch.")
             name = input("Enter your name: ")
             default_location = input("Enter your default location: ")
     else:
+        
         name = input("Enter your name: ")
         default_location = input("Enter your default location: ")
 
     print(f"Hey {name}. Welcome back! Choose an option:\n")
     print("1. Use default location")
-    print("2. Use new location")
-    print("3. Compare Weather of two locations")
-    choice = input("Enter your choice (1 or 2 or 3): ")
+    print("2. Use a new location")
+    print("3. Compare weather of two locations")
+    choice = input("Enter your choice (1, 2, or 3): ")
 
     if choice == "2":
-        location = input("Enter new location: ")
+        location = input("Enter the new location: ")
         get_weather(location)
         
     elif choice == "3":
-        flag = 1
         city1 = input("Enter the first city name: ")
         city2 = input("Enter the second city name: ")
 

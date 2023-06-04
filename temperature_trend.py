@@ -23,11 +23,8 @@ def plot_temperature_trend(weather_data):
     plt.tight_layout()
     plt.show()
 
-import matplotlib.pyplot as plt
 
-import matplotlib.pyplot as plt
-from matplotlib.dates import DateFormatter
-
+# function used to create plot for comparison of temperature
 def plot_temperature_twoInOne(data1, city1, data2, city2):
     dates1 = []
     temperatures1 = []
@@ -56,8 +53,6 @@ def plot_temperature_twoInOne(data1, city1, data2, city2):
     plt.title("Temperature Comparison")
     plt.legend()  # Add a legend to distinguish between cities
 
-    # date_format = DateFormatter("%Y-%m-%d %H:%M:%S")  # Define the date format including time
-    # plt.gca().xaxis.set_major_formatter(date_format)  # Apply the date format to x-axis ticks
     plt.xticks(rotation=45, ha='right', fontsize=8)  # Rotate and align x-axis ticks for readability
 
     plt.grid(True, linestyle='--', alpha=0.5)
