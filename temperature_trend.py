@@ -11,3 +11,16 @@ def plot_temperature_trend(weather_data):
     plt.xticks(rotation=90)
     plt.tight_layout()
     plt.show()
+
+def plot_temperature_twoInOne(data, city, color):
+    dates = []
+    temperatures = []
+
+    for item in data:
+        dt_txt = item['dt_txt']
+        temperature = item['main']['temp']
+        dates.append(dt_txt)
+        temperatures.append(temperature)
+
+    plt.plot(dates, temperatures, label=city, color=color)
+    plt.show()
