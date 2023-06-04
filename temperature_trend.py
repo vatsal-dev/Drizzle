@@ -12,15 +12,25 @@ def plot_temperature_trend(weather_data):
     plt.tight_layout()
     plt.show()
 
-def plot_temperature_twoInOne(data, city, color):
-    dates = []
-    temperatures = []
+def plot_temperature_twoInOne(data1, city1, data2, city2):
+    dates1 = []
+    temperatures1 = []
 
-    for item in data:
-        dt_txt = item['dt_txt']
-        temperature = item['main']['temp']
-        dates.append(dt_txt)
-        temperatures.append(temperature)
+    for item in data1:
+        date = item['date']
+        temperature = item['temperature']
+        dates1.append(date)
+        temperatures1.append(float(temperature))
 
-    plt.plot(dates, temperatures, label=city, color=color)
+    dates2 = []
+    temperatures2 = []
+
+    for item in data2:
+        date = item['date']
+        temperature = item['temperature']
+        dates2.append(date)
+        temperatures2.append(float(temperature))
+
+    plt.plot(dates1, temperatures1, label=city1, color='red')
+    plt.plot(dates2, temperatures2, label=city2, color='blue')
     plt.show()
