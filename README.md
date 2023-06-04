@@ -1,1 +1,1 @@
-# WeatherCast
+# MeteoMateCLI
