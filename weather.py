@@ -5,6 +5,8 @@ import datetime
 from cache import load_cache, save_cache
 from weather_details import print_weather_details
 from temperature_trend import plot_temperature_trend
+from tqdm import tqdm
+import time
 
 API_KEY = '6b03a86116c4bfcfeb0a1c66bd5f92bc'
 
@@ -34,8 +36,9 @@ def get_weather(city):
     weather_data = extract_weather_data(data)
     cache_data[city] = weather_data
     save_cache(cache_data)
-
-    print(f"Weather in {city}:")
+    print("\n")
+    capitalized = city.capitalize()
+    print(f"{capitalized}'s Weather Tale Unfolds... \n")
     print_weather_details(weather_data)
     plot_temperature_trend(weather_data)
 
@@ -43,10 +46,15 @@ def extract_weather_data(data):
     weather_list = data["list"]
     weather_data = []
 
-    for forecast in weather_list:
-        temperature = forecast["main"]["temp"]
-        date = forecast["dt_txt"]
-        weather_data.append({"date": date, "temperature": temperature})
+    total_items = len(weather_list)
+    print("\n")
+    with tqdm(total=total_items, desc="Unveiling weather's essence through code's wizardry...", bar_format="{l_bar}{bar} {n_fmt}/{total_fmt} {postfix}", unit="item", ncols=80) as pbar:
+        for forecast in weather_list:
+            temperature = forecast["main"]["temp"]
+            date = forecast["dt_txt"]
+            weather_data.append({"date": date, "temperature": temperature})
+            pbar.update(1)
+            time.sleep(0.1)  # Simulating delay
 
     return weather_data
 
