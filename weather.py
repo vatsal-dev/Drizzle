@@ -19,11 +19,12 @@ def get_weather(city):
             print(f"Weather in {city} (from cache):")
             print_weather_details(weather_data)
             plot_temperature_trend(weather_data)
-            return
+            return 
 
     url = f"http://api.openweathermap.org/data/2.5/forecast?q={city}&appid={API_KEY}"
     response = requests.get(url)
     data = response.json()
+    
 
     if data["cod"] == "404":
         print(f"City '{city}' not found. Please check the spelling.")
@@ -41,6 +42,8 @@ def get_weather(city):
     print(f"{capitalized}'s Weather Tale Unfolds... \n")
     print_weather_details(weather_data)
     plot_temperature_trend(weather_data)
+    
+    return 
 
 def extract_weather_data(data):
     weather_list = data["list"]
