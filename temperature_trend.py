@@ -23,13 +23,18 @@ def plot_temperature_trend(weather_data):
     plt.tight_layout()
     plt.show()
 
+import matplotlib.pyplot as plt
+
+import matplotlib.pyplot as plt
+from matplotlib.dates import DateFormatter
+
 def plot_temperature_twoInOne(data1, city1, data2, city2):
     dates1 = []
     temperatures1 = []
 
     for item in data1:
         date = item['date']
-        temperature = item['temperature']
+        temperature = item['temperature'] - 273.15  # Convert from Kelvin to Celsius
         dates1.append(date)
         temperatures1.append(float(temperature))
 
@@ -38,10 +43,25 @@ def plot_temperature_twoInOne(data1, city1, data2, city2):
 
     for item in data2:
         date = item['date']
-        temperature = item['temperature']
+        temperature = item['temperature'] - 273.15  # Convert from Kelvin to Celsius
         dates2.append(date)
         temperatures2.append(float(temperature))
 
+    plt.figure(figsize=(10, 6))  # Adjust the figure size for better readability
     plt.plot(dates1, temperatures1, label=city1, color='red')
     plt.plot(dates2, temperatures2, label=city2, color='blue')
+
+    plt.xlabel("Date and Time")
+    plt.ylabel("Temperature (°C)")
+    plt.title("Temperature Comparison")
+    plt.legend()  # Add a legend to distinguish between cities
+
+    # date_format = DateFormatter("%Y-%m-%d %H:%M:%S")  # Define the date format including time
+    # plt.gca().xaxis.set_major_formatter(date_format)  # Apply the date format to x-axis ticks
+    plt.xticks(rotation=45, ha='right', fontsize=8)  # Rotate and align x-axis ticks for readability
+
+    plt.grid(True, linestyle='--', alpha=0.5)
+    plt.tight_layout()
     plt.show()
+
+
