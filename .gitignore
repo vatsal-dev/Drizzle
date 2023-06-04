@@ -4,3 +4,5 @@ __pycache__/cache.cpython-311.pyc
 weather_cache.json
 *.json
 __pycache__/cache.cpython-311.pyc
+__pycache__/temperature_trend.cpython-311.pyc
+__pycache__/weather.cpython-311.pyc
