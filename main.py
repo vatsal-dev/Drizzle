@@ -2,6 +2,8 @@ import json
 import os
 from weather import get_weather
 from compare_weather import compare_weather, get_weather_data
+from completer import CityNameCompleter;
+from prompt_toolkit import prompt
 
 CONFIG_FILE = "config.json"
 
@@ -18,11 +20,14 @@ def get_user_info():
 
             print("Invalid or empty JSON file. Starting from scratch.")
             name = input("Enter your name: ")
-            default_location = input("Enter your default location: ")
+            default_location = prompt("Enter city name: ", completer=CityNameCompleter())
+            print("You entered:", default_location)
     else:
         
         name = input("Enter your name: ")
-        default_location = input("Enter your default location: ")
+        default_location = prompt("Enter your default location: ", completer=CityNameCompleter())
+        print("You entered:", default_location)
+        
 
     print(f"Hey {name}. Welcome back! Choose an option:\n")
     print("1. Use default location")
@@ -31,13 +36,16 @@ def get_user_info():
     choice = input("Enter your choice (1, 2, or 3): ")
 
     if choice == "2":
-        location = input("Enter the new location: ")
+        location = prompt("Enter the new location: ", completer=CityNameCompleter())
+        print("You entered:", location)
         get_weather(location)
         
     elif choice == "3":
-        city1 = input("Enter the first city name: ")
-        city2 = input("Enter the second city name: ")
-
+        city1 = prompt("Enter the first city name: ", completer=CityNameCompleter())
+        print("You entered:", city1)
+        city2 = prompt("Enter the second city name: ", completer=CityNameCompleter())
+        print("You entered:", city2)
+        
         weather_data_city1 = get_weather_data(city1)
         weather_data_city2 = get_weather_data(city2)
         compare_weather(city1, weather_data_city1, city2, weather_data_city2)
