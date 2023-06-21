@@ -19,6 +19,18 @@ This command-line tool allows you to fetch the current weather forecast for a sp
 - Displays the weather forecast for the next 6 days at various time intervals.
 - Supports setting the previously entered location as the default for subsequent runs.
 
+  ```
+| Feature | How to Use | User Benefits |
+| --- | --- | --- |
+| Graphs | Visualize weather data trends with interactive charts | Easily track and analyze historical weather patterns and forecast trends. Make informed decisions based on visual insights. |
+| Autocomplete | Start typing a city name and get suggestions to complete it | Save time and avoid typos by quickly selecting the correct city name from the suggested options. Ensure accurate weather information for the desired location. |
+| Interactive Mode | Engage with real-time weather information through intuitive controls | Explore current weather conditions, forecasts, and additional details interactively. Get immediate updates and stay connected to the latest weather updates. |
+| Compare Weather | Compare weather conditions between multiple locations side by side | Plan trips, events, or outdoor activities by comparing weather forecasts for different locations. Make well-informed decisions based on comprehensive weather comparisons. |
+| System Tray Icon | Access weather information directly from the system tray | Check current weather conditions, temperature, or receive notifications without the need to open the app. Conveniently stay informed with just a glance. |
+| Auto Update in Background | Automatically fetch updated weather data at regular intervals | Stay up-to-date with the latest weather information without manual intervention. Ensure accurate and timely forecasts without the need to constantly refresh or manually update. |
+| Personalization | Customize app settings, preferences, and appearance | Tailor the app to suit individual preferences, such as temperature units, language, theme, or display options. Enhance the user experience and create a personalized weather app environment. |
+```
+
 ## Prerequisites
 
 Before running the tool, ensure that you have the following installed:
