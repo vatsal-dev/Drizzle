@@ -1,7 +1,6 @@
-# MeteoMateCLI
-# MeteorologicalMateCLI
+# Drizzle
 
-# Command-Line Weather Forecast Tool
+## Command-Line Weather Forecast Tool
 
 This command-line tool allows you to fetch the current weather forecast for a specific city using the OpenWeatherMap API. It also incorporates data visualization capabilities to present weather data in a visually appealing manner.
 
@@ -13,16 +12,16 @@ This command-line tool allows you to fetch the current weather forecast for a sp
 - Parses the API response to extract relevant weather information.
 - Implements robust error handling for API requests and responses. Handles misspelled city names and displays appropriate error messages.
 - Incorporates data visualization using Matplotlib.
-- Presents weather patterns and trends through visually appealing charts, graphs, or maps. Allows users to download and share the generated graphs.
+- Presents weather patterns and trends through visually appealing charts. Allows users to download and share the generated graphs.
 - Provides an interactive and personalized experience. Greets the user by name and prompts further actions through commands.
-- Offers the choice to either use a default location or input a new location.
-- Displays the weather forecast for the next 6 days at various time intervals.
+- Offers the choice to use a default location or input a new one.
+- Displays the weather forecast for the next six days at various intervals.
 - Supports setting the previously entered location as the default for subsequent runs.
 
-| Feature | How to Use | Implementation with **GitHub Copilot** and **Microsoft Cloud Technologies** | User Benefits | Tech Stack Used |
+| Feature | How to Use | Implementation with **GitHub Copilot** and **Microsoft Technologies | User Benefits | Tech Stack Used |
 | --- | --- | --- | --- | --- |
-| **Graphs** | Visualize weather data trends with interactive charts | Utilized GitHub Copilot to assist in generating code for chart rendering and data visualization. Leveraged Microsoft Cloud Technologies, such as Azure's Data Analytics and Machine Learning, to process and analyze large weather datasets for generating meaningful graphs. | Easily track and analyze historical weather patterns and forecast trends. Make informed decisions based on visual insights. | GitHub Copilot, Azure, Data Analytics, Machine Learning (Matplotlib library) |
-| **Autocomplete** | Start typing a city name and get suggestions to complete it. | Integrated GitHub Copilot to optimize the autocomplete feature and used GeoNames API to fetch cities names for the suggestions . | Save time and avoid typos by quickly selecting the correct city name from the suggested options. Ensure accurate weather information for the desired location. | GitHub Copilot, Azure, GeoNames API, prompt_toolkit, prompt, prompt_toolkit.completion, Completer and Completion libraries. |
+| **Graphs** | Visualize weather data trends with interactive charts | Utilized GitHub Copilot to assist in generating code for chart rendering and data visualization. Enhanced the visualization of the graph using suggestions made by GitHub Copilot. | Easily track and analyze historical weather patterns and forecast trends. Make informed decisions based on visual insights. | GitHub Copilot, Data Analytics,  Matplotlib library |
+| **Autocomplete** | Start typing a city name and get suggestions to complete it. | Integrated GitHub Copilot to optimize the autocomplete feature and used GeoNames API to fetch city names for the suggestions. | Save time and avoid typos by quickly selecting the correct city name from the suggested options. Ensure accurate weather information for the desired location. | GitHub Copilot, GeoNames API, prompt_toolkit, prompt, prompt_toolkit.completion, Completer, and Completion libraries. |
 | **Interactive Mode** | Engage with real-time weather information through intuitive controls | Leveraged GitHub Copilot's code generation capabilities to build interactive controls and real-time data updates. Utilized Microsoft Azure's cloud infrastructure for seamless integration and data synchronization, enabling the app to provide live weather updates and interactive features. | Explore current weather conditions, forecasts, and additional details interactively. Get immediate updates and stay connected to the latest weather updates. | GitHub Copilot, Azure |                 
 | **Compare Weather** | Compare weather conditions between multiple locations side by side | Employed GitHub Copilot to assist in developing the comparison feature, enabling simultaneous display of weather data for different locations. Used Data Analytics and Machine Learning to compare weather between two cities and display the comparison through a graph, each city with a different color making it easy for the user to conclude decisions. | Plan trips, events, or outdoor activities by comparing weather forecasts for different locations. Make well-informed decisions based on comprehensive weather comparisons. | GitHub Copilot, Azure, OpenWeather API'S, Machine Learning, Data Analytics  |
 | **System Tray Icon** | Access weather information directly from the system tray | Integrated GitHub Copilot to implement system tray functionality, allowing users to access weather information with a single click. Utilized Microsoft's cloud-based notification services to deliver real-time weather updates and notifications to the system tray, ensuring timely information delivery without disrupting user workflow. | Check current weather conditions, temperature, or receive notifications without the need to open the app. Conveniently stay informed with just a glance. | GitHub Copilot, Azure                 |
@@ -33,7 +32,7 @@ This command-line tool allows you to fetch the current weather forecast for a sp
 
 Before running the tool, ensure that you have the following installed:
 
-- Python (version X.X.X or higher)
+- Python (version 3.10 or higher)
 - pip (to install Python packages)
 
 ## Installation
