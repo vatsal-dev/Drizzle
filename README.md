@@ -18,7 +18,7 @@ This command-line tool allows you to fetch the current weather forecast for a sp
 - Displays the weather forecast for the next six days at various intervals.
 - Supports setting the previously entered location as the default for subsequent runs.
 
-| Feature | Description | Implementation with **GitHub Copilot** and **Microsoft Technologies | User Benefits | Tech Stack Used |
+| Feature | Description | Implementation with **GitHub Copilot** and **Microsoft Technologies** | User Benefits | Tech Stack Used |
 | --- | --- | --- | --- | --- |
 | **Graphs** | Visualize weather data trends with interactive charts | Utilized GitHub Copilot to assist in generating code for chart rendering and data visualization. Enhanced the visualization of the graph using suggestions made by GitHub Copilot. | Easily track and analyze historical weather patterns and forecast trends. Make informed decisions based on visual insights. | GitHub Copilot, Data Analytics,  Matplotlib library |
 | **Autocomplete** | Start typing a city name and get suggestions to complete it. | Integrated GitHub Copilot to optimize the autocomplete feature and used GeoNames API to fetch city names for the suggestions. | Save time and avoid typos by quickly selecting the correct city name from the suggested options. The suggestions are retrieved from the GeoNames API, ensuring that valid and up-to-date city names are provided.| GitHub Copilot, GeoNames API, prompt_toolkit, prompt, prompt_toolkit.completion, Completer, and Completion libraries. |
@@ -30,35 +30,39 @@ This command-line tool allows you to fetch the current weather forecast for a sp
 | **Personalization** | Customize app settings, preferences and default location. | Employed GitHub Copilot to streamline the development of personalization features, allowing users to customize various app settings . Integrated Microsoft Azure's cloud-based storage and configuration services to securely store and retrieve user preferences, ensuring a personalized experience across devices and sessions. | Tailor the app to suit individual preferences with various options such as using default location to fetch weather, auto update the same in background or even enter a new city and compare weather . Enhance the user experience and create a personalized weather app environment. | GitHub Copilot, Azure |
 
 
-## Prerequisites
+### Prerequisites
 
-Before running the tool, ensure that you have the following installed:
+Before running the tool, make sure you have the following prerequisites installed:
 
-- Python (version 3.10 or higher)
-- pip (to install Python packages)
+*   Python (version 3.10 or higher)
+*   pip (to install Python packages)
 
-## Installation
+### Installation
 
-1. Clone the repository or download the project files.
+1.  Clone the repository or download the project files.
+    
+2.  Open a terminal or command prompt and navigate to the project directory.
+    
+3.  Install the required Python packages by running the following command:
+    
+    `pip install -r requirements.txt`
+    
+    This will automatically install the necessary packages, including Matplotlib for data visualization.
+    
 
-2. Open a terminal or command prompt and navigate to the project directory.
-
-3. Install the required Python packages by running the following command:
-
-                ||   pip install -r requirements.txt  || 
-
-This will install the necessary packages, including Matplotlib for data visualization.
-
-## Usage
+### Usage
 
 To fetch the weather forecast for a specific city, follow these steps:
 
-1. Open a terminal or command prompt and navigate to the project directory.
-
-2. Run the following command:
-
-                ||  python main.py    ||
-
+1.  Open a terminal or command prompt and navigate to the project directory.
+    
+2.  Run the following command:
+    
+    ```cli
+    python main.py
+    ```
+    
+    This will execute the tool and prompt you for the desired city.
 
 
 The tool will prompt you to enter your name and city:
