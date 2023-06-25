@@ -165,7 +165,8 @@ The Weather App makes use of the following open-source libraries:
 Screenshots
 -----------
 
-https://drive.google.com/file/d/1Z-JRecsJBLYZ82tb2Pl-J6nsS_4PKBiN/view?usp=sharing
+[Google Drive Link to View Screenshots](https://drive.google.com/file/d/1Z-JRecsJBLYZ82tb2Pl-J6nsS_4PKBiN/view?usp=sharing)
+
       
 
 Thank You!
