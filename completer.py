@@ -6,7 +6,7 @@ class CityNameCompleter(Completer):
     def get_completions(self, document, complete_event):
         city_prefix = document.text_before_cursor
         if city_prefix:
-            url = f"http://api.geonames.org/searchJSON?q={city_prefix}&maxRows=10&username=nandinigera18"
+            url = f"http://api.geonames.org/searchJSON?q={city_prefix}&maxRows=10&username=vatsal_dev"
             response = requests.get(url)
             data = response.json()
             if "status" in data:
