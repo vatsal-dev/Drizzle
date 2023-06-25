@@ -3,11 +3,16 @@
 
 This command-line tool lets you fetch a specific city's current weather forecast using the OpenWeatherMap API. It also incorporates data visualization capabilities to present weather data visually appealingly.
 
-- [Features](#features)
-- [Use of Github Copilot and Microsoft Technologies](#use-of-github-copilot-and-microsoft-technologies)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Usage](#usage)
+# Table of Contents
+1. [Features](#features)
+2. [Use of GitHub Copilot and Microsoft Technologies](#use-of-github-copilot-and-microsoft-technologies)
+3. [Prerequisites](#prerequisites)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Customization](#customization)
+7. [Acknowledgments](#acknowledgments)
+8. [Screenshots](#screenshots)
+
 
 ## Features
 
