@@ -72,15 +72,89 @@ Before running the tool, make sure you have the following prerequisites installe
 
 ### Usage
 
-To fetch the weather forecast for a specific city, follow these steps:
+Installation
+------------
+
+1.  Clone the repository or download the source code files.
+    
+2.  Open a terminal or command prompt and navigate to the project directory.
+    
+3.  Install the required Python dependencies by running the following command:
+    
+    `pip install -r requirements.txt`
+    
+
+Usage
+-----
+
+To use the Weather App, follow these steps:
 
 1.  Open a terminal or command prompt and navigate to the project directory.
     
-2.  Run the following command:
+2.  Run the `main.py` file using the following command:
+    
     
     ```cli
     python main.py
     ```
+    
+3.  The app will prompt you to enter your name and choose an option:
+    
+    ```sql
+    Hey [Your Name]. Welcome back! Choose an option:
+    
+    1. Use default location
+    2. Open default location in system tray
+    3. Use a new location
+    4. Compare weather of two locations
+    
+    Enter your choice (1, 2, 3, or 4):
+    ```
+    
+4.  Enter the corresponding number for the desired option and follow the prompts:
+    
+    *   Option 1: Use the default location
+        
+        *   The app will retrieve the weather information for the default location.
+        *   The weather details will be displayed in the terminal.
+    *   Option 2: Open the default location in the system tray
+        
+        *   The app will open the default location's weather information in the system tray.
+        *   A system tray icon will display weather details upon interaction.
+    *   Option 3: Use a new location
+        
+        *   Enter the new location for which you want to retrieve the weather information.
+        *   The weather details will be displayed in the terminal.
+    *   Option 4: Compare the weather of two locations
+        
+        *   Enter the names of the two cities you want to compare.
+        *   The app will retrieve the weather data for both cities and display a comparison.
+5.  After choosing an option, the app will store your name and selected location in a configuration file (`config.json`) for future use.
+    
+6.  You can rerun the app to perform additional actions or update your preferences.
+    
+
+Customization
+-------------
+
+*   Default Location: The default location is set in the `CONFIG_FILE` variable in the `main.py` file. You can modify the value to your desired default location.
+    
+*   Weather API: The Weather App uses external APIs to fetch weather data. The `weather.py` module contains the `get_weather` function, which can be modified to use a different weather API if needed.
+    
+
+License
+-------
+
+This project is licensed under the [MIT License](LICENSE).
+
+Acknowledgments
+----------------
+
+The Weather App makes use of the following open-source libraries:
+
+*   PyStray: [https://github.com/moses-palmer/pystray](https://github.com/moses-palmer/pystray)
+*   Pillow (Python Imaging Library): [https://python-pillow.org/](https://python-pillow.org/)
+*   Prompt Toolkit: [https://python-prompt-toolkit.readthedocs.io/](https://python-prompt-toolkit.readthedocs.io/)
     
 Check the Working here-
 
