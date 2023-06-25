@@ -56,21 +56,7 @@ Before running the tool, make sure you have the following prerequisites installe
 
 *   Python (version 3.10 or higher)
 *   pip (to install Python packages)
-
-### Installation
-
-1.  Clone the repository or download the project files.
     
-2.  Open a terminal or command prompt and navigate to the project directory.
-    
-3.  Install the required Python packages by running the following command:
-    
-    `pip install -r requirements.txt`
-    
-    This will automatically install the necessary packages, including Matplotlib for data visualization.
-    
-
-### Usage
 
 Installation
 ------------
