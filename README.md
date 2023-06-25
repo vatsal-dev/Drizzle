@@ -85,7 +85,8 @@ Generate API Keys
 6. Open the weather.py file in your preferred text editor.
 7. Find the placeholder for the API key in the code (e.g., `API_KEY = "<YOUR_API_KEY>"`).
    
-   ![image](https://github.com/vatsal-dev/Drizzle/assets/61816778/53050a9f-060c-4c11-b630-e940e9a1c341)
+  ![image](https://github.com/vatsal-dev/Drizzle/assets/61816778/be1604f1-b740-4fca-8711-aa4d5d5673ba)
+
 
 9. Replace `<YOUR_API_KEY>` with the API key you copied in Step 5.
 10. Save the weather.py file.
@@ -149,7 +150,8 @@ Customization
     
 *   Weather API: The Weather App uses external APIs to fetch weather data. The `weather.py` module contains the `get_weather` function, which can be modified to use a different weather API if needed.
 
-![image](https://github.com/vatsal-dev/Drizzle/assets/61816778/429041ff-c566-4588-b883-53cfe8f46041)
+![image](https://github.com/vatsal-dev/Drizzle/assets/61816778/7ca6729b-8e42-4374-8b52-532a61c2e2a4)
+
 
 
     
