@@ -1,6 +1,4 @@
 import requests
-import json
-import os
 import datetime
 from cache import load_cache, save_cache
 from weather_details import print_weather_details
@@ -8,7 +6,7 @@ from temperature_trend import plot_temperature_trend
 from tqdm import tqdm
 import time
 
-API_KEY = '6b03a86116c4bfcfeb0a1c66bd5f92bc'
+API_KEY = 'YOUR_API_KEY'
 
 def get_weather(city):
     cache_data = load_cache()
