@@ -84,8 +84,8 @@ To fetch the weather forecast for a specific city, follow these steps:
     
 Check the Working here-
 
-      ```cli
+
 https://drive.google.com/file/d/1Z-JRecsJBLYZ82tb2Pl-J6nsS_4PKBiN/view?usp=sharing
-      ```
+      
 
 Thank You!
