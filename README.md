@@ -82,37 +82,10 @@ To fetch the weather forecast for a specific city, follow these steps:
     python main.py
     ```
     
-    This will execute the tool and prompt you for the desired city.
+Check the Working here-
 
 
-The tool will prompt you to enter your name and city:
+https://drive.google.com/file/d/1Z-JRecsJBLYZ82tb2Pl-J6nsS_4PKBiN/view?usp=sharing
+      
 
-                Enter your name: [Your Name]
-                Enter your city: [Your City]
-
-Enter your name and city, and then press Enter.
-
-3. The tool will greet you and present the following options:
-
-                Hello [Your Name], what do you want to choose?
-
-                1.Use default location
-                2.Use new location
-                Enter your choice (1 or 2):
-
-
-4. Enter your choice by typing `1` or `2` and press Enter.
-
-                - If you choose option `1`, the tool will use the previously entered city as the default location and fetch the weather forecast for that location without prompting for input again.
-
-                - If you choose option `2`, the tool will prompt you to enter a new location:
-
-                    ```
-                    Enter new location:
-                    ```
-
-            Enter the desired city name and press Enter.
-
-5. The tool will fetch the weather forecast for the specified location for the next 6 days at different time intervals. It will display the results, including data visualizations- will show the graph for the weather changes in next few days. User is free to zoom in, zoom out, save and share the graph. 
-
-6. The entered city will be set as the default location for the next time you run the tool.
+Thank You!
