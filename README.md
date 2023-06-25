@@ -69,7 +69,23 @@ Installation
 3.  Install the required Python dependencies by running the following command:
     
     `pip install -r requirements.txt`
-    
+ 
+Generate API Keys
+-----------------
+1. Go to the OpenWeather website (https://openweathermap.org/) and create an account if you don't have one already.
+2. Once logged in, go to the "API Keys" section in your account dashboard.
+3. Click on the "Create Key" button to generate a new API key.
+4. Give your API key a name and select the desired access level (e.g., "Free" or "Paid").
+5. Copy the generated API key to your clipboard.
+6. Open the weather.py file in your preferred text editor.
+7. Find the placeholder for the API key in the code (e.g., `API_KEY = "<YOUR_API_KEY>"`).
+   
+   ![image](https://github.com/vatsal-dev/Drizzle/assets/61816778/53050a9f-060c-4c11-b630-e940e9a1c341)
+
+9. Replace `<YOUR_API_KEY>` with the API key you copied in Step 5.
+10. Save the weather.py file.
+11. You are now ready to use the OpenWeather API with your generated API key in the weather.py script.
+
 
 Usage
 -----
@@ -127,6 +143,9 @@ Customization
 *   Default Location: The default location is set in the `CONFIG_FILE` variable in the `main.py` file. You can modify the value to your desired default location.
     
 *   Weather API: The Weather App uses external APIs to fetch weather data. The `weather.py` module contains the `get_weather` function, which can be modified to use a different weather API if needed.
+
+![image](https://github.com/vatsal-dev/Drizzle/assets/61816778/429041ff-c566-4588-b883-53cfe8f46041)
+
 
     
 Acknowledgments
