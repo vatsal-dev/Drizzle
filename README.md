@@ -3,11 +3,16 @@
 
 This command-line tool lets you fetch a specific city's current weather forecast using the OpenWeatherMap API. It also incorporates data visualization capabilities to present weather data visually appealingly.
 
-- [Features](#features)
-- [Use of Github Copilot and Microsoft Technologies](#use-of-github-copilot-and-microsoft-technologies)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Usage](#usage)
+# Table of Contents
+1. [Features](#features)
+2. [Use of GitHub Copilot and Microsoft Technologies](#use-of-github-copilot-and-microsoft-technologies)
+3. [Prerequisites](#prerequisites)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Customization](#customization)
+7. [Acknowledgments](#acknowledgments)
+8. [Screenshots](#screenshots)
+
 
 ## Features
 
@@ -50,42 +55,118 @@ Enhance your weather exploration with this feature-rich tool. Read about the fea
 | **Personalization** | Customize app settings, preferences, and the default location. | Employed GitHub Copilot to streamline the development of personalization features, allowing users to customize various app settings. | Tailor the app to suit individual preferences with various options such as using the default location to fetch weather, auto-update the same in the background or even enter a new city and compare weather. Enhances the user experience and creates a personalized weather app environment. | GitHub Copilot |
 
 
-### Prerequisites
+Prerequisites
+-------------
 
 Before running the tool, make sure you have the following prerequisites installed:
 
 *   Python (version 3.10 or higher)
 *   pip (to install Python packages)
+    
 
-### Installation
+Installation
+------------
 
-1.  Clone the repository or download the project files.
+1.  Clone the repository or download the source code files.
     
 2.  Open a terminal or command prompt and navigate to the project directory.
     
-3.  Install the required Python packages by running the following command:
+3.  Install the required Python dependencies by running the following command:
     
     `pip install -r requirements.txt`
-    
-    This will automatically install the necessary packages, including Matplotlib for data visualization.
-    
+ 
+Generate API Keys
+-----------------
+1. Go to the OpenWeather website (https://openweathermap.org/) and create an account if you don't have one already.
+2. Once logged in, go to the "API Keys" section in your account dashboard.
+3. Click on the "Create Key" button to generate a new API key.
+4. Give your API key a name and select the desired access level (e.g., "Free" or "Paid").
+5. Copy the generated API key to your clipboard.
+6. Open the weather.py file in your preferred text editor.
+7. Find the placeholder for the API key in the code (e.g., `API_KEY = "<YOUR_API_KEY>"`).
+   
+   ![image](https://github.com/vatsal-dev/Drizzle/assets/61816778/53050a9f-060c-4c11-b630-e940e9a1c341)
 
-### Usage
+9. Replace `<YOUR_API_KEY>` with the API key you copied in Step 5.
+10. Save the weather.py file.
+11. You are now ready to use the OpenWeather API with your generated API key in the weather.py script.
 
-To fetch the weather forecast for a specific city, follow these steps:
+
+Usage
+-----
+
+To use the Weather App, follow these steps:
 
 1.  Open a terminal or command prompt and navigate to the project directory.
     
-2.  Run the following command:
+2.  Run the `main.py` file using the following command:
+    
     
     ```cli
     python main.py
     ```
     
-Check the Working here-
+3.  The app will prompt you to enter your name and choose an option:
+    
+    ```sql
+    Hey [Your Name]. Welcome back! Choose an option:
+    
+    1. Use default location
+    2. Open default location in system tray
+    3. Use a new location
+    4. Compare weather of two locations
+    
+    Enter your choice (1, 2, 3, or 4):
+    ```
+    
+4.  Enter the corresponding number for the desired option and follow the prompts:
+    
+    *   Option 1: Use the default location
+        
+        *   The app will retrieve the weather information for the default location.
+        *   The weather details will be displayed in the terminal.
+    *   Option 2: Open the default location in the system tray
+        
+        *   The app will open the default location's weather information in the system tray.
+        *   A system tray icon will display weather details upon interaction.
+    *   Option 3: Use a new location
+        
+        *   Enter the new location for which you want to retrieve the weather information.
+        *   The weather details will be displayed in the terminal.
+    *   Option 4: Compare the weather of two locations
+        
+        *   Enter the names of the two cities you want to compare.
+        *   The app will retrieve the weather data for both cities and display a comparison.
+5.  After choosing an option, the app will store your name and selected location in a configuration file (`config.json`) for future use.
+    
+6.  You can rerun the app to perform additional actions or update your preferences.
+    
+
+Customization
+-------------
+
+*   Default Location: The default location is set in the `CONFIG_FILE` variable in the `main.py` file. You can modify the value to your desired default location.
+    
+*   Weather API: The Weather App uses external APIs to fetch weather data. The `weather.py` module contains the `get_weather` function, which can be modified to use a different weather API if needed.
+
+![image](https://github.com/vatsal-dev/Drizzle/assets/61816778/429041ff-c566-4588-b883-53cfe8f46041)
 
 
-https://drive.google.com/file/d/1Z-JRecsJBLYZ82tb2Pl-J6nsS_4PKBiN/view?usp=sharing
+    
+Acknowledgments
+----------------
+
+The Weather App makes use of the following open-source libraries:
+
+*   PyStray: [https://github.com/moses-palmer/pystray](https://github.com/moses-palmer/pystray)
+*   Pillow (Python Imaging Library): [https://python-pillow.org/](https://python-pillow.org/)
+*   Prompt Toolkit: [https://python-prompt-toolkit.readthedocs.io/](https://python-prompt-toolkit.readthedocs.io/)
+    
+Screenshots
+-----------
+
+[Google Drive Link to View Screenshots](https://drive.google.com/file/d/1Z-JRecsJBLYZ82tb2Pl-J6nsS_4PKBiN/view?usp=sharing)
+
       
 
 Thank You!
