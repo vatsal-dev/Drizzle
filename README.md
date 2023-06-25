@@ -50,7 +50,8 @@ Enhance your weather exploration with this feature-rich tool. Read about the fea
 | **Personalization** | Customize app settings, preferences, and the default location. | Employed GitHub Copilot to streamline the development of personalization features, allowing users to customize various app settings. | Tailor the app to suit individual preferences with various options such as using the default location to fetch weather, auto-update the same in the background or even enter a new city and compare weather. Enhances the user experience and creates a personalized weather app environment. | GitHub Copilot |
 
 
-### Prerequisites
+Prerequisites
+-------------
 
 Before running the tool, make sure you have the following prerequisites installed:
 
@@ -126,13 +127,8 @@ Customization
 *   Default Location: The default location is set in the `CONFIG_FILE` variable in the `main.py` file. You can modify the value to your desired default location.
     
 *   Weather API: The Weather App uses external APIs to fetch weather data. The `weather.py` module contains the `get_weather` function, which can be modified to use a different weather API if needed.
+
     
-
-License
--------
-
-This project is licensed under the [MIT License](LICENSE).
-
 Acknowledgments
 ----------------
 
@@ -142,8 +138,8 @@ The Weather App makes use of the following open-source libraries:
 *   Pillow (Python Imaging Library): [https://python-pillow.org/](https://python-pillow.org/)
 *   Prompt Toolkit: [https://python-prompt-toolkit.readthedocs.io/](https://python-prompt-toolkit.readthedocs.io/)
     
-Check the Working here-
-
+Screenshots
+-----------
 
 https://drive.google.com/file/d/1Z-JRecsJBLYZ82tb2Pl-J6nsS_4PKBiN/view?usp=sharing
       
